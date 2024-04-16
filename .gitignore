@@ -123,6 +123,6 @@ data/virufy/
 
 # Logfiles
 logs/
-
+utils.py
 teest.ipynb
 preprocessing.ipynb
