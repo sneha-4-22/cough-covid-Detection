@@ -51,7 +51,8 @@ After encountering challenges with processing audio datasets, I look into resear
 
 - Bandwidth refers to the range of frequencies present in an audio signal. In cough detection, the bandwidth of cough sounds may be different from that of background noise or non-cough sounds.
 - By analyzing the bandwidth of audio signals, we can identify patterns that are typical of cough sounds.
-| ![coughmfcc](ss/cbandwidth.png)            | ![noncoughmfcc](ss/nbandwidth.png)            |
+
+| ![coughband](ss/cbandwidth.png)            | ![noncoughband](ss/nbandwidth.png)            |
 | ---------------------------------------    | ----------------------------------            | 
 | **See the cough Septral bandwidth plot !** | **See the non-cough Septral bandwidth plot !**| 
 ### Centroid
