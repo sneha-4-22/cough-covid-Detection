@@ -59,9 +59,10 @@ After encountering challenges with processing audio datasets, I look into resear
 
 - The centroid represents the center of mass of the frequency distribution in an audio signal. It provides information about the average frequency content of the signal.
 - Differences in centroid values between cough and non-cough sounds can help in distinguishing between them.
-| ![coughmfcc](ss/ccentroid.png)                              | ![noncoughmfcc](ss/ncentroid.png)                 |
-| ---------------------------------------                     | ----------------------------------                | 
-| **See the cough Septral Centroid coeff plot !**             | **See the non-cough Septral centroid plot !**     | 
+
+| ![coughcent](ss/ccentroid.png)                 | ![noncoughcent](ss/ncentroid.png)             |
+| ---------------------------------------        | ----------------------------------            | 
+| **See the cough Septral Centroid coeff plot !**| **See the non-cough Septral centroid plot !** | 
 ### Zero Crossing Rate
 
 - The zero crossing rate is the rate at which the audio signal changes its sign (i.e., from positive to negative or vice versa). It provides information about the temporal dynamics of the signal.
