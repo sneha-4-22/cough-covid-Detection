@@ -51,17 +51,23 @@ After encountering challenges with processing audio datasets, I look into resear
 
 - Bandwidth refers to the range of frequencies present in an audio signal. In cough detection, the bandwidth of cough sounds may be different from that of background noise or non-cough sounds.
 - By analyzing the bandwidth of audio signals, we can identify patterns that are typical of cough sounds.
-
+| ![coughmfcc](ss/cbandwidth.png)                         | ![noncoughmfcc](ss/nbandwidth.png)                  |
+| ---------------------------------------                 | ----------------------------------                  | 
+| **See the cough Septral bandwidth plot !**              | **See the non-cough Septral bandwidth plot !**      | 
 ### Centroid
 
 - The centroid represents the center of mass of the frequency distribution in an audio signal. It provides information about the average frequency content of the signal.
 - Differences in centroid values between cough and non-cough sounds can help in distinguishing between them.
-
+| ![coughmfcc](ss/ccentroid.png)                              | ![noncoughmfcc](ss/ncentroid.png)                 |
+| ---------------------------------------                     | ----------------------------------                | 
+| **See the cough Septral Centroid coeff plot !**             | **See the non-cough Septral centroid plot !**     | 
 ### Zero Crossing Rate
 
 - The zero crossing rate is the rate at which the audio signal changes its sign (i.e., from positive to negative or vice versa). It provides information about the temporal dynamics of the signal.
 - Cough sounds may exhibit different zero crossing rates compared to background noise or non-cough sounds, making it a useful feature for classification.
-
+| ![coughmfcc](ss/cmffcc.png)                   | ![noncoughmfcc](ss/nmfcc.png)            |
+| ---------------------------------------       | ----------------------------------       | 
+| **See the cough mffcc coeff plot !**          | **See the non-cough mffcc coeff plot !** | 
 
 
 
