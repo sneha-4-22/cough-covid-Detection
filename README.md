@@ -44,19 +44,9 @@ After encountering challenges with processing audio datasets, I look into resear
 - MFCCs are a widely used feature representation for audio signals. They capture the spectral characteristics of the audio signal, similar to how human auditory perception works.
 - MFCCs are useful for distinguishing between different sounds based on their frequency content. In the case of cough detection, certain patterns in the MFCCs may be characteristic of cough sounds.
 
-| ![coughmfcc](ss/cmfcc.png)                    | ![noncoughmfcc](ss/nmfcc.png)            |
+| ![coughmfcc](ss/cmffcc.png)                   | ![noncoughmfcc](ss/nmfcc.png)            |
 | ---------------------------------------       | ----------------------------------       | 
 | **See the cough mffcc coeff plot !**          | **See the non-cough mffcc coeff plot !** | 
-<div style="display: flex;">
-    <div style="flex: 50%; padding: 5px;">
-        <img src="ss/cmfcc.png" alt="coughmfcc" style="width: 100%;">
-        <p style="text-align: center;">See the cough MFCC coefficient plot!</p>
-    </div>
-    <div style="flex: 50%; padding: 5px;">
-        <img src="ss/nmfcc.png" alt="noncoughmfcc" style="width: 100%;">
-        <p style="text-align: center;">See the non-cough MFCC coefficient plot!</p>
-    </div>
-</div>
 ### Bandwidth
 
 - Bandwidth refers to the range of frequencies present in an audio signal. In cough detection, the bandwidth of cough sounds may be different from that of background noise or non-cough sounds.
