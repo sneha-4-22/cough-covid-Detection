@@ -8,7 +8,7 @@ Welcome to the Cough Detection and COVID Prediction Streamlit App! This app util
 - [View the App](#viewapp)
 - [Features](#features)
 - [Usage](#usage)
-- [Model Explaination/My Methodology](#ModelExplaination)
+- [Model Explanation/My Methodology](#model-explanation)
 
 ## Overview
 
