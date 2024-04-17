@@ -31,7 +31,7 @@ You can access the deployed Streamlit app by clicking [here](https://cough-covid
 2. **Detection and Prediction**: The app will process the audio file to detect cough sounds and predict the likelihood of COVID.
 3. **View Results**: The results of the analysis, including cough detection outcomes and COVID prediction, will be displayed.
 
-## Model Explaination
+## Model Explanation/My Methodology
 
 
 
