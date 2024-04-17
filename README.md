@@ -33,7 +33,30 @@ You can access the deployed Streamlit app by clicking [here](https://cough-covid
 
 ## Model Explanation/My Methodology
 
+### Mono vs Stereo Audio
 
+- **Mono**: Mono audio means that the sound is combined into a single channel. In the context of cough detection, mono audio may represent a balanced sound where both left and right sides of the audio are equally represented.
+- **Stereo**: Stereo audio means that the sound is split into two channels, typically left and right. In the context of cough detection, stereo audio may represent an unbalanced sound where one side is louder than the other, indicating background noise.
+
+### MFCC (Mel-Frequency Cepstral Coefficients)
+
+- MFCCs are a widely used feature representation for audio signals. They capture the spectral characteristics of the audio signal, similar to how human auditory perception works.
+- MFCCs are useful for distinguishing between different sounds based on their frequency content. In the case of cough detection, certain patterns in the MFCCs may be characteristic of cough sounds.
+
+### Bandwidth
+
+- Bandwidth refers to the range of frequencies present in an audio signal. In cough detection, the bandwidth of cough sounds may be different from that of background noise or non-cough sounds.
+- By analyzing the bandwidth of audio signals, we can identify patterns that are typical of cough sounds.
+
+### Centroid
+
+- The centroid represents the center of mass of the frequency distribution in an audio signal. It provides information about the average frequency content of the signal.
+- Differences in centroid values between cough and non-cough sounds can help in distinguishing between them.
+
+### Zero Crossing Rate
+
+- The zero crossing rate is the rate at which the audio signal changes its sign (i.e., from positive to negative or vice versa). It provides information about the temporal dynamics of the signal.
+- Cough sounds may exhibit different zero crossing rates compared to background noise or non-cough sounds, making it a useful feature for classification.
 
 
 
