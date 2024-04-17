@@ -32,6 +32,7 @@ You can access the deployed Streamlit app by clicking [here](https://cough-covid
 3. **View Results**: The results of the analysis, including cough detection outcomes and COVID prediction, will be displayed.
 
 ## Model Explanation/My Methodology
+After encountering challenges with processing audio datasets, I look into research papers on the same topic and discovered that librosa is widely employed in similar projects. I will try my best to simplify the concept of feature extraction:-
 
 ### Mono vs Stereo Audio
 
