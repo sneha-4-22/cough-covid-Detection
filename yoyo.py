@@ -43,5 +43,5 @@ if st.button('Submit'):
         # elif encoder.classes_[predictions] == 'not_covid':
         #     st.write("Predicted class: not cough")
         # else:
-        st.write(f"Predicted class: {predicted_class}")
+        st.write(f"Predicted class: {encoder.classes_[predictions]}")
 
