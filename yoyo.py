@@ -36,5 +36,12 @@ if st.button('Submit'):
         predictions = torch.argmax(outputs.data, 1)
 
         # Display results
-        st.write(f"Model outputs: {outputs[0].detach().numpy()}")
-        st.write(f"Predicted class: {encoder.classes_[predictions]}")
+        # Display results
+        predicted_class = encoder.classes_[predictions][0]
+        if encoder.classes_[predictions] == 'covid':
+            st.write("Predicted class: cough")
+        elif encoder.classes_[predictions] == 'not_covid':
+            st.write("Predicted class: not cough")
+        else:
+            st.write(f"Predicted class: {predicted_class}")
+

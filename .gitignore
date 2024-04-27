@@ -5,6 +5,6 @@ __pycache__/
 data/virufy/
 
 logs/
-utils.py
+
 teest.ipynb
 preprocessing.ipynb
