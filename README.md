@@ -77,9 +77,9 @@ After encountering challenges with processing audio datasets, I look into resear
 - The zero crossing rate is the rate at which the audio signal changes its sign (i.e., from positive to negative or vice versa). It provides information about the temporal dynamics of the signal.
 - Cough sounds may exhibit different zero crossing rates compared to background noise or non-cough sounds, making it a useful feature for classification.
 
-| ![coughzcra](ss/cc.png)                       | ![noncoughzcra](ss/nc.png)                     |
+| ![coughzcra](ss/nc.png)                       | ![noncoughzcra](ss/cc.png)                     |
 | ---------------------------------------       | ----------------------------------             | 
-| **See the cough Zreo crossing rate plot !**   | **See the non-cough zero cossing rate plot !** | 
+| **See the cough chroma features plot !**      | **See the non-cough chroma features plot !**   | 
 
 
 
