@@ -38,10 +38,19 @@ if st.button('Submit'):
         # Display results
         # Display results
         predicted_class = encoder.classes_[predictions][0]
+<<<<<<< HEAD
         if encoder.classes_[predictions] == 'covid':
             st.write("Predicted class: cough")
         elif encoder.classes_[predictions] == 'not_covid':
             st.write("Predicted class: not cough")
         else:
             st.write(f"Predicted class: {encoder.classes_[predictions]}")
+=======
+        # if encoder.classes_[predictions] == 'covid':
+        #     st.write("Predicted class: cough")
+        # elif encoder.classes_[predictions] == 'not_covid':
+        #     st.write("Predicted class: not cough")
+        # else:
+        st.write(f"Predicted class: {encoder.classes_[predictions]}")
+>>>>>>> b9ece99360e7a67aefd72d24f17b59b87e4cf44c
 
