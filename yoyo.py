@@ -62,46 +62,7 @@ def generate_report(user_info, prediction, features):
     buffer.seek(0)
     return buffer
 
-st.title("COVID-19 Detection App")
 
-st.header("Enter your details")
-name = st.text_input("First Name")
-age = st.number_input("Age", min_value=0, max_value=120)
-gender = st.radio("Gender", ["Male", "Female", "Other"])
-
-
-st.header("Upload the audio file")
-uploaded_file = st.file_uploader("Upload a WAV file", type=["wav"])
-
-if uploaded_file is not None:
-    st.audio(uploaded_file, format='audio/wav')
-
-    if st.button('Submit'):
-        features = extract_features(uploaded_file)
-        features_scaled = preprocess_features(features)
-        prediction = model.predict(features_scaled)
-        
-        if prediction[0] >= 0.9:
-            st.success("Prediction: COVID-19")
-        else:
-            st.success("Prediction: Non-COVID-19")
-
-        st.header("Extracted Features")
-        feature_names = ['Chroma STFT', 'RMSE', 'Spectral Centroid', 'Spectral Bandwidth', 'Spectral Rolloff', 'Zero Crossing Rate'] + [f'MFCC{i}' for i in range(1, 14)]
-        fig, ax = plt.subplots()
-        sns.barplot(x=feature_names, y=features, ax=ax)
-        plt.xticks(rotation=90)
-        plt.title('Extracted Features')
-        plt.tight_layout()
-        st.pyplot(fig)
-
-        user_info = {
-            'name': name,
-            'age': age,
-            'gender': gender
-        }
-        buffer = generate_report(user_info, prediction, features)
-        st.download_button(label="Download Report", data=buffer, file_name="COVID-19_Report.pdf", mime="application/pdf")
 tour_script = """
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@8.0.0/dist/css/shepherd.css">
 <style>
@@ -229,4 +190,44 @@ tour_script = """
   });
 </script>
 """
+
+st.title("COVID-19 Detection App")
 components.html(tour_script)
+st.header("Enter your details")
+name = st.text_input("First Name")
+age = st.number_input("Age", min_value=0, max_value=120)
+gender = st.radio("Gender", ["Male", "Female", "Other"])
+
+
+st.header("Upload the audio file")
+uploaded_file = st.file_uploader("Upload a WAV file", type=["wav"])
+
+if uploaded_file is not None:
+    st.audio(uploaded_file, format='audio/wav')
+
+    if st.button('Submit'):
+        features = extract_features(uploaded_file)
+        features_scaled = preprocess_features(features)
+        prediction = model.predict(features_scaled)
+        
+        if prediction[0] >= 0.9:
+            st.success("Prediction: COVID-19")
+        else:
+            st.success("Prediction: Non-COVID-19")
+
+        st.header("Extracted Features")
+        feature_names = ['Chroma STFT', 'RMSE', 'Spectral Centroid', 'Spectral Bandwidth', 'Spectral Rolloff', 'Zero Crossing Rate'] + [f'MFCC{i}' for i in range(1, 14)]
+        fig, ax = plt.subplots()
+        sns.barplot(x=feature_names, y=features, ax=ax)
+        plt.xticks(rotation=90)
+        plt.title('Extracted Features')
+        plt.tight_layout()
+        st.pyplot(fig)
+
+        user_info = {
+            'name': name,
+            'age': age,
+            'gender': gender
+        }
+        buffer = generate_report(user_info, prediction, features)
+        st.download_button(label="Download Report", data=buffer, file_name="COVID-19_Report.pdf", mime="application/pdf")
