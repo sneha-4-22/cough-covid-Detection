@@ -1,7 +1,10 @@
 torch>=1.0
-scikit-learn
-pandas
-numpy
 streamlit
-matplotlib
+numpy
 librosa
+scikit-learn
+keras
+matplotlib
+pandas
+seaborn
+reportlab
