@@ -111,20 +111,7 @@ tour_script = """
   .shepherd-cancel-icon {
     color: red;
   }
-  iframe {
-    background-color:  #ff1493;
-  }
-  .shepherd-step .shepherd-content {
-    padding: 0 !important;
-  }
-  .shepherd-step {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .shepherd-content {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  
 </style>
 <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.0.0/dist/js/shepherd.min.js"></script>
 <script>
@@ -192,7 +179,9 @@ tour_script = """
 """
 
 st.title("COVID-19 Detection App")
+
 components.html(tour_script)
+
 st.header("Enter your details")
 name = st.text_input("First Name")
 age = st.number_input("Age", min_value=0, max_value=120)
