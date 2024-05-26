@@ -6,7 +6,6 @@ import torch
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
-# helper functions
 def preproces(fn_wav):
     y, sr = librosa.load(fn_wav, mono=True, duration=5)
     chroma_stft = librosa.feature.chroma_stft(y=y, sr=sr)
@@ -50,9 +49,7 @@ class CoughNet(torch.nn.Module):
         x = self.l6(x)
         return x
 
-# https://deeplizard.com/learn/video/0LhiS6yu2qQ
 def plot_confusion_matrix(targets, predictions, classes):
-    # calculate normalized confusion matrix
     cm = confusion_matrix(targets, predictions)
     cm = cm.astype(np.float) / cm.sum(axis=1)[:, np.newaxis]
 
