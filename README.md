@@ -28,6 +28,7 @@ https://github.com/sneha-4-22/cough-covid-Detection/assets/112711068/3d95065b-10
 - **Cough Detection**: The app utilizes machine learning models trained on audio data to detect cough sounds within uploaded audio recordings.
 - **COVID Prediction**: Based on the characteristics of the cough sound, the app can predict whether it may be indicative of COVID or not.
 - **Librosa Integration**: Leveraging the librosa library, the app extracts relevant features from the audio recordings to enhance the accuracy of cough detection and COVID prediction.
+- **Tour Integration using Shepherd**: Seamlessly navigate through the app with our integrated Shepherd feature. Shepherd acts as your personal guide, leading you through each section of the app and providing detailed explanations along the way.
 
 ## Usage
 
