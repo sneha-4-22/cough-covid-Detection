@@ -1,6 +1,6 @@
 # Cough Detect Pro
 
-Welcome to the Cough Detection and COVID Prediction Streamlit App! This app utilizes machine learning models and the librosa library to analyze audio recordings and classify cough sounds from background noise. Additionally, it has the capability to predict whether a cough may be indicative of COVID or not.
+Welcome to the Cough Detection and COVID Prediction Streamlit App! This app utilizes machine learning models and the librosa library to analyze audio recordings and classify cough sounds from background noise. Additionally, Additionally, to ensure a smooth and informative user experience, we've integrated a guided tour feature using Shepherd.
 
 ## Table of Contents
 
