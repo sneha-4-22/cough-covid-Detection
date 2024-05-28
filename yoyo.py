@@ -180,7 +180,7 @@ tour_script = """
 
 st.title("COVID-19 Detection App")
 
-components.html(tour_script)
+components.html(tour_script,height=200)
 
 st.header("Enter your details")
 name = st.text_input("First Name")
