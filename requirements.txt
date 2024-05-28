@@ -1,4 +1,5 @@
 torch
+h5py
 streamlit
 numpy
 librosa
