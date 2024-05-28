@@ -14,9 +14,13 @@ Welcome to the Cough Detection and COVID Prediction Streamlit App! This app util
 
 This Streamlit app provides an intuitive interface for users to upload audio recordings containing cough sounds. The uploaded audio files are processed using machine learning algorithms trained on audio data, enabling the app to identify and classify cough sounds accurately.
 
-## View the App
+## APP Preview
 
-You can access the deployed Streamlit app by clicking [here](https://cough-covid-detection-5kkk4sneha22t.streamlit.app).
+
+
+https://github.com/sneha-4-22/cough-covid-Detection/assets/112711068/3d95065b-1004-489e-9bac-12d505715478
+
+
 
 
 ## Features
